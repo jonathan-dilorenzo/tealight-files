@@ -38,4 +38,3 @@ while True:
     super_move()
     turn(1)
     super_move()
-    dir=-dir
