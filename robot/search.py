@@ -7,25 +7,28 @@ from tealight.robot import (move,
                             right_side)
 
 # This is a fairly useless algorithm!
-
 x=0
 dir=1
+
+def super_move():
+  if touch() != "wall":
+    move()
 
 while True:
   if touch() == "fruit":
     x=0
-    move()
+    super_move()
   elif right_side() == "fruit":
     x=0
     turn(1)
-    move()
+    super_move()
   elif left_side() == "fruit":
     x=0
     turn(3)
-    move()
+    super_move()
   elif look() == "fruit":
     x=0
-    move()
+    super_move()
   elif x < 3:
     x=x+1
     turn(1)
@@ -33,7 +36,6 @@ while True:
     turn(1)
   else:
     x=0
-    move()
+    super_move()
     turn(1)
-    move()
-    dir=-dir
+    super_move()
