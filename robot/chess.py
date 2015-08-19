@@ -41,4 +41,5 @@ while True:
   elif touch() == "wall":
     break
   else:
+    move()
     break
