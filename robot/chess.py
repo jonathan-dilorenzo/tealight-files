@@ -19,3 +19,7 @@ n=8
 #  turn(3)
 
 print touch()
+print look()
+print left_side()
+print right_side()
+print smell()
