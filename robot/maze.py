@@ -10,6 +10,8 @@ from tealight.robot import (move,
 def super_move():
   if touch() != "wall":
     move()
+  else:
+    turn(1)
     
 while True:
   super_move()
