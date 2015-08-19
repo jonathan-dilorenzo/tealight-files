@@ -18,6 +18,8 @@ n=8
 #    turn(1)
 #  turn(3)
 
+x=0
+
 while True:
   if touch():
     move()
@@ -27,5 +29,10 @@ while True:
   elif left_side():
     turn(3)
     move()
+  elif look():
+    move()
+    x=x+1
+  elif x < 4:
+    turn(1)
   else:
     break
