@@ -42,4 +42,5 @@ while True:
     break
   else:
     move()
+    turn(x%4)
     break
