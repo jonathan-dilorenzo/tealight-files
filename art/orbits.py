@@ -43,16 +43,25 @@ def handle_frame():
   
   x2 = x + vx
   y2 = y + vy
-  x=x2
-  y=y2
-  #if x2 > screen_width || x2 < 0:
-  #  x=-x2
-  #  vx=-vx
-  #else:
-  #  x=x2
+  
+  if x2 < 0:
+    x=-x2
+    vx=-vx
+  elif x2 > screen_width:
+    x=screen_width-x2
+    vx=-vx
+  else:
+    x=x2
     
-  #ax=0
-  #ay=0
+    
+  if y2 < 0:
+    y=-y2
+    vy=-vy
+  elif y2 > screen_height:
+    y=screen_height-y2
+    vy=-vy
+  else:
+    y=y2
   
   color("blue")
   
