@@ -35,4 +35,5 @@ while True:
     x=0
     move()
     turn(1)
+    move()
     dir=-dir
