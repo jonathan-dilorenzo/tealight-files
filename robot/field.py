@@ -9,6 +9,8 @@ from tealight.robot import (move,
 x=0
 dir=1
 
+
+
 while True:
   if touch() == "fruit":
     x=0
