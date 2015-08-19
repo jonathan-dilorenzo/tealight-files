@@ -9,6 +9,7 @@ from tealight.robot import (move,
 # This is a fairly useless algorithm!
 
 x=0
+dir=1
 
 while True:
   if touch() == "fruit":
@@ -33,4 +34,5 @@ while True:
   else:
     x=x+1
     move()
-    turn(x%5)
+    turn(dir)
+    dir=-dir
