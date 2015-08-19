@@ -32,7 +32,7 @@ while True:
   elif touch() == "wall":
     turn(1)
   else:
-    x=x+1
+    x=0
     move()
-    turn(dir)
+    turn(1)
     dir=-dir
