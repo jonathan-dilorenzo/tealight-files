@@ -28,6 +28,8 @@ while True:
   elif x < 3:
     x=x+1
     turn(1)
+  elif touch() == "wall":
+    turn(1)
   else:
     x=x+1
     move()
