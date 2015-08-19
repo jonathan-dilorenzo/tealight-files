@@ -43,5 +43,4 @@ while True:
   else:
     x=x+1
     move()
-    turn(x%4)
-    break
+    turn(x%5)
