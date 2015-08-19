@@ -48,7 +48,7 @@ def handle_frame():
     x=-x2
     vx=-vx
   elif x2 > screen_width:
-    x=screen_width-x2
+    x=screen_width*2-x2
     vx=-vx
   else:
     x=x2
@@ -58,7 +58,7 @@ def handle_frame():
     y=-y2
     vy=-vy
   elif y2 > screen_height:
-    y=screen_height-y2
+    y=screen_height*2-y2
     vy=-vy
   else:
     y=y2
