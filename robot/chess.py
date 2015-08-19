@@ -18,6 +18,8 @@ n=8
 #    turn(1)
 #  turn(3)
 
+while true
+
 print touch()
 print look()
 print left_side()
