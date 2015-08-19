@@ -43,12 +43,13 @@ def handle_frame():
   
   x2 = x + vx
   y2 = y + vy
-  
-  if x2 > screen_width || x2 < 0:
-    x=-x2
-    vx=-vx
-  else:
-    x=x2
+  x=x2
+  y=y2
+  #if x2 > screen_width || x2 < 0:
+  #  x=-x2
+  #  vx=-vx
+  #else:
+  #  x=x2
     
   ax=0
   ay=0
