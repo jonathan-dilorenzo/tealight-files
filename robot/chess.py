@@ -21,22 +21,23 @@ n=8
 x=0
 
 while True:
-  if touch():
+  if touch() == "fruit":
     x=0
     move()
-  elif right_side():
+  elif right_side() == "fruit":
     x=0
     turn(1)
     move()
-  elif left_side():
+  elif left_side() == "fruit":
     x=0
     turn(3)
     move()
   elif look() == "fruit":
     x=0
     move()
-  elif x < 4:
+  elif x < 3:
     x=x+1
     turn(1)
+  elif touch() == "wall":
   else:
     break
