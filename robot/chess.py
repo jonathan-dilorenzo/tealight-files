@@ -18,22 +18,13 @@ n=8
 #    turn(1)
 #  turn(3)
 
-while true
-
-print touch()
-print look()
-print left_side()
-print right_side()
-print smell()
-turn(3)
-print touch()
-print look()
-print left_side()
-print right_side()
-print smell()
-move()
-print smell()
-move()
-print smell()
-move()
-print smell()
+while True:
+  if touch():
+    move()
+  else if right_side():
+    turn(1)
+    move()
+  else if left_side():
+    turn(3)
+    move()
+  else break
