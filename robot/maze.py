@@ -13,13 +13,13 @@ dir=1
 def super_move(dir):
   if touch() != "wall":
     move()
+  elif left_side == "wall":
+    turn(1)
   else:
-    turn(dir)
-    return True
+    turn(3)
     
 while True:
-  if super_move(dir):
-    dir=-dir
+  super_move(dir)
   
     
     
