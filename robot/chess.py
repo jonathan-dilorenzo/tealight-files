@@ -32,7 +32,7 @@ while True:
     x=0
     turn(3)
     move()
-  elif look():
+  elif look() == "fruit":
     x=0
     move()
   elif x < 4:
