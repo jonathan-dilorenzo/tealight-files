@@ -16,3 +16,4 @@ for i in range(0,n):
     for k in range(0,s-1):
       move()
     turn(1)
+  turn(3)
