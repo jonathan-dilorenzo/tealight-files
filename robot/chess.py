@@ -24,7 +24,7 @@ while True:
   elif right_side():
     turn(1)
     move()
-  elif left_side() == fruit:
+  elif left_side():
     turn(3)
     move()
   else:
