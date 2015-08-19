@@ -15,10 +15,11 @@ def super_move(dir):
     move()
   else:
     turn(dir)
-    dir=-dir
+    return true
     
 while True:
-  super_move(dir)
+  if super_move(dir):
+    dir=-dir
   
     
     
