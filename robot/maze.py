@@ -14,9 +14,9 @@ def super_move(dir):
   if touch() != "wall":
     move()
   elif left_side == "wall":
-    turn(1)
-  else:
     turn(3)
+  else:
+    turn(1)
     
 while True:
   super_move(dir)
