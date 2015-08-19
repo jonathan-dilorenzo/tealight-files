@@ -51,8 +51,8 @@ def handle_frame():
   #else:
   #  x=x2
     
-  ax=0
-  ay=0
+  #ax=0
+  #ay=0
   
   color("blue")
   
