@@ -8,5 +8,5 @@ r=100
 
 for i in range(0,r):
   move(2)
-  turn(float(360.0/r))
+  turn(360.0/r)
   color(colors[i%3])
