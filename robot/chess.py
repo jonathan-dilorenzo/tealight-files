@@ -8,37 +8,35 @@ from tealight.robot import (move,
 
 # Add your code here
 
-s=5
-n=8
-
-#for i in range(0,n):
-#  for j in range(0,5):
-#    for k in range(0,s-1):
-#      move()
-#    turn(1)
-#  turn(3)
-
 x=0
+dir=1
+
+def super_move():
+  if touch() != "wall":
+    move()
 
 while True:
   if touch() == "fruit":
     x=0
-    move()
+    super_move()
   elif right_side() == "fruit":
     x=0
     turn(1)
-    move()
+    super_move()
   elif left_side() == "fruit":
     x=0
     turn(3)
-    move()
+    super_move()
   elif look() == "fruit":
     x=0
-    move()
+    super_move()
   elif x < 3:
     x=x+1
     turn(1)
+  elif touch() == "wall":
+    turn(1)
   else:
-    x=x+1
-    move()
-    turn(x%5)
+    x=0
+    super_move()
+    turn(1)
+    super_move()
