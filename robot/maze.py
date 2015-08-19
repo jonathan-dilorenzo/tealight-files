@@ -10,16 +10,16 @@ from tealight.robot import (move,
 
 dir=1
 
-def super_move(dir):
+def super_move():
   if touch() != "wall":
     move()
-  elif left_side == "wall":
-    turn(3)
-  else:
+  elif left_side() == "wall":
     turn(1)
+  else:
+    turn(3)
     
 while True:
-  super_move(dir)
+  super_move()
   
     
     
