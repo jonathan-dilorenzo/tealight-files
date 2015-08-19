@@ -8,6 +8,6 @@ from tealight.robot import (move,
 
 # Add your code here
 for i in range(0,10):
-  move(1)
+  move()
   #turn(360.0/r)
   #color(colors[i%3])
