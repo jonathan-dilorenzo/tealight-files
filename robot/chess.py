@@ -21,7 +21,7 @@ n=8
 while True:
   if touch():
     move()
-  elif right_side() == fruit:
+  elif right_side():
     turn(1)
     move()
   elif left_side() == fruit:
