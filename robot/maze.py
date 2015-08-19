@@ -15,7 +15,7 @@ def super_move(dir):
     move()
   else:
     turn(dir)
-    return true
+    return True
     
 while True:
   if super_move(dir):
