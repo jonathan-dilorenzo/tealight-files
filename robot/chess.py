@@ -22,17 +22,21 @@ x=0
 
 while True:
   if touch():
+    x=0
     move()
   elif right_side():
+    x=0
     turn(1)
     move()
   elif left_side():
+    x=0
     turn(3)
     move()
   elif look():
+    x=0
     move()
-    x=x+1
   elif x < 4:
+    x=x+1
     turn(1)
   else:
     break
