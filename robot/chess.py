@@ -20,4 +20,4 @@ n=8
 
 move()
 move()
-touch()
+print touch()
