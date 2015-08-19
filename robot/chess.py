@@ -39,5 +39,6 @@ while True:
     x=x+1
     turn(1)
   elif touch() == "wall":
+    break
   else:
     break
