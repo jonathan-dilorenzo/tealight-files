@@ -19,12 +19,12 @@ n=8
 #  turn(3)
 
 while True:
-  if touch():
+  if touch() == fruit:
     move()
-  else if right_side():
+  else if right_side() == fruit:
     turn(1)
     move()
-  else if left_side():
+  else if left_side() == fruit:
     turn(3)
     move()
   else break
