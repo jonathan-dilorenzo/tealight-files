@@ -9,7 +9,8 @@ from tealight.robot import (move,
 # Add your code here
 
 dir=1
-def super_move():
+
+def super_move(dir):
   if touch() != "wall":
     move()
   else:
@@ -17,6 +18,7 @@ def super_move():
     dir=-dir
     
 while True:
-  super_move()
+  super_move(dir)
+  
     
     
