@@ -18,6 +18,4 @@ n=8
 #    turn(1)
 #  turn(3)
 
-move()
-move()
 print touch()
