@@ -15,7 +15,7 @@ for i in range(0,n):
   for j in range(0,4):
     for k in range(0,s-1):
       move()
-    turn()
+    turn(90)
 
 for i in range(0,10):
   move()
